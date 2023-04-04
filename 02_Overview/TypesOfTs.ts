@@ -105,6 +105,6 @@ function hello3(name: string | number) {
   } else if (typeof name === 'number') {
     name; // number
   } else {
-    name; // never
+    name; // never 절대 실행되면 안될 코드
   }
 }
