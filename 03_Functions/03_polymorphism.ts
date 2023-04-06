@@ -29,7 +29,7 @@ type GenericSuperPrint = {
   // 제네릭으로 쓰면 함수를 사용할때 타입을 추론해서 넣어줌
 };
 
-const GenericSuperPrint: ConcreteSuperPrint = arr => arr[0];
+const GenericSuperPrint: GenericSuperPrint = arr => arr[0];
 
 const aa = GenericSuperPrint([1, 2, 3, 4]);
 const bb = GenericSuperPrint([true, false, true]);
