@@ -24,3 +24,5 @@ class Player extends User {
 
 const nico = new Player('nico', 'las', 'nicco');
 nico.getFullName();
+
+export {};
