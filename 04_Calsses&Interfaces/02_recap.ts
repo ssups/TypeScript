@@ -18,7 +18,9 @@ class Dict {
   def(term: string) {
     return this.words[term];
   }
-  // 단어 삭제, 단어 업데이트 메서드
+  static hello() {
+    return 'hello';
+  }
 }
 
 class Word {
