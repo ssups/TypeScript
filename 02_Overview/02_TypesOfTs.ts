@@ -59,10 +59,10 @@ type Boy = {
 const boy: Boy = {
   name: 'seop',
 };
-boy.name = 'ni'; // readonly는 변경불가
+// boy.name = 'ni'; // readonly는 변경불가
 
 const numbers: readonly number[] = [1, 2, 3, 4];
-numbers.push(1); // 배열에 추가도 불가함
+// numbers.push(1); // 배열에 추가도 불가함
 
 // Turple
 const monster: [string, number, boolean] = ['slime', 3, true];
@@ -77,12 +77,12 @@ const anyTemp: any = 'd';
 // Unknown
 let u: unknown; // 이 변수로 어떤 작업을 하려면 코드로 먼저 어떤타입인지 확인해야함
 
-let sum = u + 2; // => 안됨
+// let sum = u + 2; // => 안됨
 if (typeof u === 'number') {
   let sum = u + 1;
 }
-if (typeof a === 'string') {
-  let upper = a.toUpperCase();
+if (typeof u === 'string') {
+  let upper = u.toUpperCase();
 }
 
 // Void
