@@ -1,5 +1,5 @@
 type Nickname = string;
-type Friends = Array<string>; // Array 자체가 하나의 class로 만들어진거라서 타입으로도 사용 가능
+type Friends = Array<string>; // Array 자체가 하나의 class로 만들어진거라서 타입으로도 사용 가능 <>안에는 제너릭으로 넣을타입
 
 type Team = 'read' | 'blue' | 'yellow'; // 이런식으로 훨씬 더 concrete 하게 타입 지정 가능
 type Health = 1 | 5 | 10;
