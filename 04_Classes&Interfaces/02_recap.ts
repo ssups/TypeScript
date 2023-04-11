@@ -33,5 +33,6 @@ const kimchi = new Word('kimchi', '한국의 뻘건 배추로만든 양념채소
 const dict = new Dict();
 dict.add(kimchi);
 dict.def('kimchi');
+dict.hello();
 
 export {}; // 파일간에 서로 간섭하는거 막을라고 함
