@@ -1,0 +1,12 @@
+{
+  "include": ["src"], // 자바스크립트로 컴파일하고싶은 타입스크립트 경로 적기
+  "compilerOptions": {
+    "outDir": "build", // 컴파일된 자바스크립트 파일이 생성될 위치
+    "target": "ES6", // 컴파일될 자바스크립트 버전 설정
+    "lib": ["ES6", "DOM"], // 해당 코드가 어떤 환경위에서 실행될지 정하는거
+    // lib 배열 안에 dom을 넣으면 document.queryselector 같은 돔관련 기능들, localStorage등 브라우저 API를 자동완성해서 쓸 수 있음
+    "strict": true,
+    "allowJs": true
+    // 이걸 true로 해주면 일반 js 파일을 경로로 ./ 이런식으로 직접 import해와서 쓰면 타입스크립트가 알아서 해당 Js 파일의 타입들을 추론해서 쓸 수 있게 해줌
+  }
+}

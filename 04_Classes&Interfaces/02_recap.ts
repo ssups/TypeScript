@@ -21,6 +21,8 @@ class Dict {
   static hello() {
     return 'hello';
   }
+  // static은 instance 생성 안하고 바로 쓰는 함수
+  // Dict.static() 이런식으로 사용함
 }
 
 class Word {
@@ -33,6 +35,5 @@ const kimchi = new Word('kimchi', '한국의 뻘건 배추로만든 양념채소
 const dict = new Dict();
 dict.add(kimchi);
 dict.def('kimchi');
-dict.hello();
 
 export {}; // 파일간에 서로 간섭하는거 막을라고 함
